@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vodafone.test.LoginUITest">
+      <class name="com.vodafone.test.LoginTest">
         <methods>
-          <include name="headerTitle"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="validloginTest"/>
         </methods>
-      </class> <!-- com.vodafone.test.LoginUITest -->
+      </class> <!-- com.vodafone.test.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
