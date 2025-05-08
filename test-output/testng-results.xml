@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-07T05:35:50 PDT" name="Default suite" finished-at="2025-05-07T05:36:01 PDT" duration-ms="11541">
+    <groups>
+    </groups>
+    <test started-at="2025-05-07T05:35:50 PDT" name="Default test" finished-at="2025-05-07T05:36:01 PDT" duration-ms="11541">
+      <class name="com.vodafone.test.LoginUITest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.vodafone.test.LoginUITest@1aafa419]" started-at="2025-05-07T05:35:50 PDT" name="setup" finished-at="2025-05-07T05:35:56 PDT" duration-ms="5830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="headerTitle()[pri:0, instance:com.vodafone.test.LoginUITest@1aafa419]" started-at="2025-05-07T05:35:56 PDT" name="headerTitle" finished-at="2025-05-07T05:35:56 PDT" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.vodafone.test.LoginUITest@1aafa419]" started-at="2025-05-07T05:35:56 PDT" name="teardown" finished-at="2025-05-07T05:35:56 PDT" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.vodafone.test.LoginUITest@1aafa419]" started-at="2025-05-07T05:35:56 PDT" name="setup" finished-at="2025-05-07T05:36:01 PDT" duration-ms="4672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="titleTest()[pri:0, instance:com.vodafone.test.LoginUITest@1aafa419]" started-at="2025-05-07T05:36:01 PDT" name="titleTest" finished-at="2025-05-07T05:36:01 PDT" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.vodafone.test.LoginUITest@1aafa419]" started-at="2025-05-07T05:36:01 PDT" name="teardown" finished-at="2025-05-07T05:36:01 PDT" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.vodafone.test.LoginUITest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
