@@ -1,32 +1,12 @@
 package com.vodafone.test;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class LoginUITest {
-	WebDriver driver;
+import com.vodafone.base.AutomationWrapper;
 
-	@BeforeMethod
-	public void setup() {
-
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://opensource-demo.orangehrmlive.com/");
-	}
-
-	@AfterMethod
-	public void teardown() {
-
-		driver.quit();
-	}
+public class LoginUITest extends AutomationWrapper{
 
 	@Test
 	public void titleTest() {
