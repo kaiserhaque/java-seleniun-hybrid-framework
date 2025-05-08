@@ -1,40 +1,41 @@
 package com.vodafone.test;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.vodafone.base.AutomationWrapper;
 import com.vodafone.pages.DashboardPage;
 import com.vodafone.pages.LoginPage;
+import com.vodafone.utils.DataUtils;
 
 public class LoginTest extends AutomationWrapper {
 
-	@Test
-	public void validloginTest() {
+	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider")
+	public void validloginTest(String username, String password, String expectedOutput) {
 		LoginPage loginPage = new LoginPage(driver);
 		// username
-		loginPage.enterUsername("Admin");
+		loginPage.enterUsername(username);
 		// password
-		loginPage.enterPassword("admin123");
+		loginPage.enterPassword(password);
 		// login
 		loginPage.clickOnLogin();
 		// assert
 		DashboardPage dashboardPage = new DashboardPage(driver);
-		Assert.assertEquals(dashboardPage.getQuickLaunchText(), "Quick Launch");
+		Assert.assertEquals(dashboardPage.getQuickLaunchText(), expectedOutput);
 	}
 
-	@Test
-	public void invalidloginTest() {
+	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider")
+	public void invalidloginTest(String username, String password, String expectedErro) {
 		LoginPage loginPage = new LoginPage(driver);
 		// username
-		loginPage.enterUsername("john");
+		loginPage.enterUsername(username);
 		// password
-		loginPage.enterPassword("admin1234");
+		loginPage.enterPassword(password);
 		// login
 		loginPage.clickOnLogin();
 		// assert
-		Assert.assertEquals(loginPage.getInvalidErrorMessage(), "Invalid credentials");
+		Assert.assertEquals(loginPage.getInvalidErrorMessage(), expectedErro);
 	}
+	
 
 }
