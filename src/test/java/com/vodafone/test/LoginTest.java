@@ -5,30 +5,36 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.vodafone.base.AutomationWrapper;
+import com.vodafone.pages.DashboardPage;
+import com.vodafone.pages.LoginPage;
 
-public class LoginTest extends AutomationWrapper{
+public class LoginTest extends AutomationWrapper {
+
 	@Test
-	public void validloginTest(){
-		driver.findElement(By.name("username")).sendKeys("Admin");
-		//password
-		driver.findElement(By.name("password")).sendKeys("admin123");
-		//login
-		driver.findElement(By.xpath("//button[normalize-space(@type)='submit']")).click();
-		//assert
-		String msg = driver.findElement(By.xpath("//p[contains(normalize-space(),'Quick Launch')]")).getText();
-		Assert.assertEquals(msg, "Quick Launch");
+	public void validloginTest() {
+		LoginPage loginPage = new LoginPage(driver);
+		// username
+		loginPage.enterUsername("Admin");
+		// password
+		loginPage.enterPassword("admin123");
+		// login
+		loginPage.clickOnLogin();
+		// assert
+		DashboardPage dashboardPage = new DashboardPage(driver);
+		Assert.assertEquals(dashboardPage.getQuickLaunchText(), "Quick Launch");
 	}
-	
+
 	@Test
-	public void invalidloginTest(){
-		driver.findElement(By.name("username")).sendKeys("Admin");
-		//password
-		driver.findElement(By.name("password")).sendKeys("password123");
-		//login
-		driver.findElement(By.xpath("//button[normalize-space(@type)='submit']")).click();
-		//assert
-		String msg = driver.findElement(By.xpath("//p[contains(normalize-space(),'Invalid credentials')]")).getText();
-		Assert.assertEquals(msg, "Invalid credentials");
+	public void invalidloginTest() {
+		LoginPage loginPage = new LoginPage(driver);
+		// username
+		loginPage.enterUsername("john");
+		// password
+		loginPage.enterPassword("admin1234");
+		// login
+		loginPage.clickOnLogin();
+		// assert
+		Assert.assertEquals(loginPage.getInvalidErrorMessage(), "Invalid credentials");
 	}
 
 }

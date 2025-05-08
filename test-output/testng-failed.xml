@@ -5,6 +5,7 @@
     <classes>
       <class name="com.vodafone.test.LoginTest">
         <methods>
+          <include name="invalidloginTest"/>
           <include name="teardown"/>
           <include name="setup"/>
           <include name="validloginTest"/>

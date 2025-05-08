@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-07T23:19:45 PDT" name="Default suite" finished-at="2025-05-07T23:20:00 PDT" duration-ms="15487">
+  <suite started-at="2025-05-08T00:38:10 PDT" name="Default suite" finished-at="2025-05-08T00:38:28 PDT" duration-ms="17461">
     <groups>
     </groups>
-    <test started-at="2025-05-07T23:19:45 PDT" name="Default test" finished-at="2025-05-07T23:20:00 PDT" duration-ms="15487">
+    <test started-at="2025-05-08T00:38:10 PDT" name="Default test" finished-at="2025-05-08T00:38:28 PDT" duration-ms="17461">
       <class name="com.vodafone.test.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-07T23:19:45 PDT" name="setup" finished-at="2025-05-07T23:19:50 PDT" duration-ms="5646" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-08T00:38:10 PDT" name="setup" finished-at="2025-05-08T00:38:17 PDT" duration-ms="6852" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidloginTest()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-07T23:19:50 PDT" name="invalidloginTest" finished-at="2025-05-07T23:19:53 PDT" duration-ms="2284" status="PASS">
+        <test-method signature="invalidloginTest()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-08T00:38:17 PDT" name="invalidloginTest" finished-at="2025-05-08T00:38:19 PDT" duration-ms="2137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidloginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-07T23:19:53 PDT" name="teardown" finished-at="2025-05-07T23:19:53 PDT" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-08T00:38:19 PDT" name="teardown" finished-at="2025-05-08T00:38:19 PDT" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-07T23:19:53 PDT" name="setup" finished-at="2025-05-07T23:19:58 PDT" duration-ms="4694" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-08T00:38:19 PDT" name="setup" finished-at="2025-05-08T00:38:25 PDT" duration-ms="5616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validloginTest()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-07T23:19:58 PDT" name="validloginTest" finished-at="2025-05-07T23:20:00 PDT" duration-ms="2365" status="PASS">
+        <test-method signature="validloginTest()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-08T00:38:25 PDT" name="validloginTest" finished-at="2025-05-08T00:38:27 PDT" duration-ms="2367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validloginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-07T23:20:00 PDT" name="teardown" finished-at="2025-05-07T23:20:00 PDT" duration-ms="211" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.vodafone.test.LoginTest@47eaca72]" started-at="2025-05-08T00:38:27 PDT" name="teardown" finished-at="2025-05-08T00:38:28 PDT" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
